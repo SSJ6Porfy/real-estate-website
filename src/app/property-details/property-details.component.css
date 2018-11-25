@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('../../assets/Fonts/Montserrat/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: Oswald;
+    src: url('../../assets/Fonts/Oswald/Oswald-Bold.ttf');
+}
+@font-face {
+    font-family: RobotoLight;
+    src: url('../../assets/Fonts/Roboto/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: NanumGothicBold;
+    src: url('../../assets/Fonts/Nanum_Gothic/NanumGothic-Bold.ttf');
+}
+.property-details-container {
+    display: flex;
+    justify-content: center;
+    padding: 75px 0;
+    width: 100%;
+}
+.property-details-inner-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    justify-content: center;
+}
+.section-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+.section-title::after {
+    background: #03A9F4;
+    content: ' ';
+    height: 2px;
+    width: 225px;
+    display: flex;
+    align-self: center;
+    margin-top: 15px;
+}
+.property-blob-container {
+    display: flex;
+    width: 90%;
+    padding: 20px 0;
+}
+.property-blob {
+    font-family: RobotoLight;
+    font-size: 18px;
+}
+.details-container {
+    display: flex;
+    width: 90%;
+}
+.details-row {
+    column-count: 3;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.detail-item {
+    font-family: Oswald;
+    font-size: 18px;
+    list-style: none;
+    padding: 20px 0;
+    text-align: center;
+}
+.detail-item-highlight {
+    color: #03A9F4;
+    font-family: NanumGothicBold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}

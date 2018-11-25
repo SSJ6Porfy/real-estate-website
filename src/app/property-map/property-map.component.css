@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('../../assets/Fonts/Montserrat/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: Oswald;
+    src: url('../../assets/Fonts/Oswald/Oswald-Bold.ttf');
+}
+.google-maps-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 75px 0;
+    width: 100%;
+}
+#map {
+    height: 400px;
+    width: 100%;
+}
+.section-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+.section-title::after {
+    background: #03A9F4;
+    content: ' ';
+    height: 2px;
+    width: 225px;
+    display: flex;
+    align-self: center;
+    margin-top: 15px;
+}
+.markers-filter-row {
+    display: flex;
+    height: 80px;
+    justify-content: space-around;
+    padding: 10px 0;
+    width: 80%;
+}
+.filter-btn {
+    background: #03A9F4;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    height: 36px;
+}

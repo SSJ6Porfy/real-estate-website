@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('../../assets/Fonts/Montserrat/Montserrat-Bold.ttf');
+}
+.mortgage-calc-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    width: 100%;
+}
+.mortgage-calc-inner-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 90%;
+}
+.form-container {
+    border-radius: 5px;
+    border: 1px solid rgb(230, 230, 230);
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 
+                0 2px 2px 0 rgba(0,0,0,.14), 
+                0 1px 5px 0 rgba(0,0,0,.12);
+    display: flex;
+    flex-direction: column;
+    padding: 25px 50px;
+}
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.payment-btn {
+    background:#03A9F4;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 
+                0 2px 2px 0 rgba(0,0,0,.14), 
+                0 1px 5px 0 rgba(0,0,0,.12);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    width: 120px;
+}
+.form-label {
+    color: #3F51B5;
+}
+mat-form-field {
+    padding: 0px 5px;
+}
+.section-title {
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+.section-title::after {
+    background: #03A9F4;
+    content: ' ';
+    height: 2px;
+    width: 225px;
+    display: flex;
+    align-self: center;
+    margin-top: 15px;
+}
+.chart-container {
+    display: flex;
+    margin-left: 80px;
+}
+#canvas {
+    display: flex;
+    height: 500px;
+    width: 700px;
+}
+

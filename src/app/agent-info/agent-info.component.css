@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('../../assets/Fonts/Montserrat/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: Oswald;
+    src: url('../../assets/Fonts/Oswald/Oswald-Bold.ttf');
+}
+@font-face {
+    font-family: RobotoLight;
+    src: url('../../assets/Fonts/Roboto/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: NanumGothicBold;
+    src: url('../../assets/Fonts/Nanum_Gothic/NanumGothic-Bold.ttf');
+}
+.agent-info-container {
+    background: #efefef;
+    display: flex;
+    justify-content: center;
+    padding: 75px 0;
+    width: 100%;
+}
+.agent-info-inner-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 90%;
+}
+.agent-photo-container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 35%;
+}
+.agent-photo {
+    height: 400px;
+    width: 400px;
+}
+.agent-details-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 65%;
+}
+.agent-name {
+    font-family: NanumGothicBold;
+    font-size: 24px;
+    text-align: center;
+}
+.agent-agency {
+    font-family: NanumGothicBold;
+    font-size: 20px;
+    text-align: center;
+}
+.agent-pitch {
+    font-family: RobotoLight;
+}
+.agent-contacts-container {
+    display: flex;
+}
+.agent-contact-list {
+    column-count: 2;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+.agent-contact-list-item {
+    break-inside: avoid;
+    font-family: Oswald;
+    font-size: 14px;
+    list-style: none;
+    padding: 15px 0;
+    page-break-inside: avoid;
+    text-align: center;
+    -webkit-column-break-inside: avoid;
+}
+.agent-contact-list-item-highlight {
+    color: #03A9F4;
+    font-family: NanumGothicBold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.agent-social-links {
+    display: flex;
+    justify-content: center;
+}
+.social-links {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+}
+.section-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+.section-title::after {
+    background: #03A9F4;
+    content: ' ';
+    height: 2px;
+    width: 225px;
+    display: flex;
+    align-self: center;
+    margin-top: 15px;
+}
+.content-container {
+    display: flex;
+}

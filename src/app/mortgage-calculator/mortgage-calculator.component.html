@@ -1,0 +1,41 @@
+<div class="mortgage-calc-container">
+  <div class="mortgage-calc-inner-container">
+    <h3 class="section-title">Estimate Your Payment</h3>
+    <div class="content-container">
+      <form [formGroup]="calculator" class="form-container">
+          <div class="form-row">
+              <mat-form-field>
+                <label class="form-label">Purchase Price</label>
+                <input matInput type="text" formControlName="purchasePrice" (keydown)="keyDownDisable($event.keyCode)" (keyup)="disableLetters($event.keyCode, $event.target)"  [value]="purchasePrice | currency : 'USD' : 'symbol' : '1.0-0'"/>
+              </mat-form-field>
+              <mat-form-field>
+                  <mat-select placeholder="Down Payment %" formControlName="downPaymentPercent">
+                    <mat-option *ngFor="let percent of downPaymentPercents" [value]="percent">
+                      {{ percent | percent}}
+                    </mat-option>
+                  </mat-select>
+              </mat-form-field>
+              <mat-form-field>
+                <mat-select placeholder="Loan Term" formControlName="loanTerm">
+                  <mat-option *ngFor="let loanTerm of loanTerms" [value]="loanTerm">
+                    {{ loanTerm }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field>
+                  <label class="form-label">Property Tax Rate</label>
+                  <input matInput type="text" formControlName="propertyTaxPercent" (keydown)="keyDownDisable($event.keyCode)" [value]="propertyTaxPercent | percent : '1.2-2'"/>
+                </mat-form-field>
+                <mat-form-field>
+                  <label class="form-label">Annual Home Insurance</label>
+                  <input matInput type="text" formControlName="homeInsurance" (keydown)="keyDownDisable($event.keyCode)" (keyup)="disableLetters($event.keyCode, $event.target)" [value]="homeInsurance | currency : 'USD' : 'symbol' : '1.0-0'"/>
+                </mat-form-field> 
+          </div>
+          <button class="payment-btn" (click)="calculateMortgage()" mat-raised-button>Calculate</button>
+      </form>
+      <div class="chart-container">  
+        <canvas id="canvas">{{ chart }}</canvas>
+      </div>
+    </div>
+  </div>
+</div>
